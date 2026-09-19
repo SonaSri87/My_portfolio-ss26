@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sona Sri Gummula | Resume</title>
+    <style>
+      :root {
+        --ink: #172333;
+        --muted: #586779;
+        --accent: #0f766e;
+        --line: #dbe4ea;
+        --paper: #ffffff;
+        --page: #e8eef2;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--ink);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+      }
+
+      .resume {
+        width: min(850px, calc(100% - 2rem));
+        margin: 2rem auto;
+        padding: 3.2rem 3.6rem;
+        background: var(--paper);
+        box-shadow: 0 20px 50px rgba(23, 35, 51, 0.12);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        padding-bottom: 1.4rem;
+        border-bottom: 3px solid var(--accent);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: -0.04em;
+      }
+
+      .role {
+        margin: 0.3rem 0 0;
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .contact {
+        text-align: right;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      a { color: var(--accent); }
+      section { margin-top: 1.7rem; }
+      h2 {
+        margin: 0 0 0.65rem;
+        color: var(--accent);
+        font-size: 0.92rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      p { margin: 0; }
+      .summary { color: var(--muted); }
+      .item {
+        display: grid;
+        grid-template-columns: 145px 1fr;
+        gap: 1.2rem;
+        padding: 0.75rem 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .item:first-of-type { border-top: 0; }
+      .date { color: var(--muted); font-weight: 700; }
+      h3 { margin: 0; font-size: 1rem; }
+      .item p { color: var(--muted); }
+      .skills { color: var(--muted); }
+      .skills strong { color: var(--ink); }
+
+      @media print {
+        body { background: #fff; }
+        .resume { width: 100%; margin: 0; padding: 0; box-shadow: none; }
+      }
+
+      @media (max-width: 600px) {
+        .resume { padding: 2rem 1.3rem; }
+        header { display: block; }
+        .contact { margin-top: 1rem; text-align: left; }
+        .item { grid-template-columns: 1fr; gap: 0.2rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="resume">
+      <header>
+        <div>
+          <h1>Sona Sri Gummula</h1>
+          <p class="role">Computer Science Student | Software Developer</p>
+        </div>
+        <div class="contact">
+          Hyderabad, Telangana<br />
+          <a href="mailto:gummulasonasri@gmail.com">gummulasonasri@gmail.com</a><br />
+          +91 8125902393<br />
+          <a href="https://github.com/SonaSri87">GitHub</a> | <a href="https://www.linkedin.com/in/gummulasonasri">LinkedIn</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>Profile</h2>
+        <p class="summary">Computer Science student focused on software development, data structures, backend engineering, and practical problem solving. Interested in building reliable, useful applications with clean logic and thoughtful user experiences.</p>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <p class="skills"><strong>Programming:</strong> Python, Java, C, JavaScript, HTML, CSS, SQL</p>
+        <p class="skills"><strong>CS Fundamentals:</strong> Data Structures, Algorithms, OS, Computer Networks, DBMS</p>
+        <p class="skills"><strong>Engineering:</strong> LLD, System Design, REST APIs, Flask, Backend Development</p>
+        <p class="skills"><strong>Tools:</strong> Git, GitHub, Docker, Firebase</p>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div class="item">
+          <div class="date">Software Project</div>
+          <div><h3>Concept Dependency Visualizer</h3><p>Built a graph-based learning tool that maps concept dependencies and generates structured learning paths using DFS.</p></div>
+        </div>
+        <div class="item">
+          <div class="date">Android Project</div>
+          <div><h3>Smart QR Health System</h3><p>Created an Android solution that retrieves patient records through QR scanning to reduce registration time and data-entry errors.</p></div>
+        </div>
+        <div class="item">
+          <div class="date">Web Application</div>
+          <div><h3>Healing Hands</h3><p>Designed a healthcare application for discovering medical camps, booking appointments, and managing healthcare information.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="item"><div class="date">2023 - Present</div><div><h3>B.Tech, Computer Science and Engineering</h3><p>Nalla Malla Reddy Engineering College, Hyderabad | CGPA: 9.16</p></div></div>
+        <div class="item"><div class="date">2022</div><div><h3>Class XII</h3><p>Score: 97.7%</p></div></div>
+        <div class="item"><div class="date">2020</div><div><h3>Class X</h3><p>Score: 100%</p></div></div>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <p class="skills">AI and Data Analytics - AICTE / EduNet Foundation; Docker for Developers - LinkedIn Learning; Career Essentials in GitHub - LinkedIn Learning; Internship and training programs - Cognifyz Technologies, Internshala.</p>
+      </section>
+    </main>
+  </body>
+</html>
