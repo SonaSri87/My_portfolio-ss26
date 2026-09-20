@@ -401,6 +401,19 @@
         color: var(--text-soft);
       }
 
+      .project-link {
+        display: inline-flex;
+        margin-top: 1.1rem;
+        color: var(--primary-2);
+        font-size: 0.86rem;
+        font-weight: 800;
+      }
+
+      .project-link:hover {
+        color: var(--warm);
+        text-decoration: underline;
+      }
+
       .tags {
         display: flex;
         flex-wrap: wrap;
@@ -1195,6 +1208,24 @@
           <div class="projects-grid">
             <article class="project-card">
               <div class="project-body">
+                <h3>System Design Playground</h3>
+                <p>
+                  A software architecture learning platform that explains HLD and LLD through real-world case
+                  studies, design patterns, UML diagrams, API workflows, scalable architecture examples, and structured
+                  engineering documentation.
+                </p>
+                <div class="tags">
+                  <span>HLD &amp; LLD</span>
+                  <span>Design Patterns</span>
+                  <span>JavaScript</span>
+                  <span>Architecture</span>
+                </div>
+                <a class="project-link" href="https://github.com/sonasri87/System-design-Playground" target="_blank" rel="noreferrer">View repository ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-body">
                 <h3>Concept Dependency Visualizer</h3>
                 <p>
                   A browser-based tool that maps concept dependencies as a directed graph and generates learning
@@ -1205,6 +1236,7 @@
                   <span>Graphs</span>
                   <span>Learning Tool</span>
                 </div>
+                <a class="project-link" href="https://github.com/SonaSri87/Myproject-Concept-Dependency-Visualizer" target="_blank" rel="noreferrer">View repository ↗</a>
               </div>
             </article>
 
